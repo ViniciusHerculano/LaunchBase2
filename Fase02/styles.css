@@ -50,6 +50,7 @@ header {
 }
 
 #wrapper h1{
+    text-align: center;
     font-size: 42px;
     line-height: 52px;
 }
@@ -70,4 +71,40 @@ header {
 
 #links-footer a{
     border-bottom:  1px solid white;
+}
+
+
+/*=== CARDS ===*/
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    background-color: #7159c1;
+}
+
+.card__image-container{
+    width: 100%;
+}
+
+.container__content,
+.card__info{
+    padding: 24px;
+}
+
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price{
+    background-color: #7159c1;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
 }
